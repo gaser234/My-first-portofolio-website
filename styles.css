@@ -1,0 +1,291 @@
+/* =========================
+   IMPORT FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Serif:ital,opsz@0,8..144;1,8..144&display=swap');
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(16, 17, 37);
+}
+
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+.logo {
+  color: white;
+  font-family: Poppins, serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-family: Poppins, serif;
+  transition: color 0.15s ease-in-out;
+}
+
+.header a:hover {
+  color: rgb(135, 141, 252);
+}
+
+hr {
+  opacity: 0.2;
+  margin-bottom: 100px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.hero {
+  background-image: url(Hero\ effect.png);
+  background-size: cover;
+  background-size: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.hero p {
+  color: white;
+  font-family: Poppins, serif;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  border-radius: 80px;
+  margin-bottom: 100px;
+}
+
+.about-title {
+  color: white;
+  font-family: Poppins, serif;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   TEXT STYLES
+========================= */
+.p2,
+.p3,
+.p4 {
+  color: white;
+  font-family: Poppins, serif;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.p2 {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.p3 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+
+/* =========================
+   HIGHLIGHT TEXT
+========================= */
+span {
+  font-size: 40px;
+  color: rgb(120, 237, 248);
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   DIVIDERS
+========================= */
+.hr2,
+.hr3 {
+  width: 50%;
+  opacity: 0.1;
+  margin: 20px auto 100px;
+}
+
+.hr4 {
+  opacity: 0.1;
+  margin: 0;
+}
+
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+.myworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 80px;
+  margin-bottom: 100px;
+}
+
+.work-card {
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  transition: transform 0.15s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.work-card:hover {
+  transform: scale(1.5);
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.Contactme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  transition: transform 0.15s;
+}
+
+.Contactme a:hover {
+
+transform: scale(1.5);
+
+
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 1023px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 10px;
+    background-size: 180px;
+  }
+
+  .hero p {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .hero img {
+    width: 180px;
+    margin-top: 15px;
+  }
+
+  .aboutme,
+  .myworks,
+  .Contactme {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 25px;
+  }
+
+  .p2, .p3, .p4 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  .Contactme img {
+    width: 80px;
+  }
+
+  .work-card:hover {
+    transform: none;
+  }
+}
+
